@@ -2,75 +2,35 @@
 
 GeoBibli est une application web développée avec Spring Boot dans le cadre d'un projet scolaire. Elle permet de gérer une bibliothèque numérique tout en intégrant une carte interactive pour localiser et rechercher des villes dans le monde.
 
-Fonctionnalités
-Ajout de livres via un onglet Catégorie, avec :
+* Fonctionnalités
+   - Ajout de livres via un onglet Catégorie, avec : le titre du livre , l’auteur, la catégorie
 
-Le titre du livre
+  - Onglet Sélection affichant une liste concise (titre, auteur, catégorie)
 
-L’auteur
+  - Onglet Accueil : Géolocalisation automatique, Affichage d’une carte interactive, Recherche de ville dans le monde
 
-La catégorie
+* Technologies utilisées : Spring Boot (Java) , Thymeleaf (moteur de templates), OkHttpClient pour les appels réseau, Leaflet.js pour la carte interactive, HTML / CSS / 
 
-Onglet Sélection affichant une liste concise (titre, auteur, catégorie)
+* Installation et exécution
+ - Prérequis: Java JDK 17, Gradle (ou utiliser le Gradle Wrapper inclus)
 
-Onglet Accueil :
+* Étapes
+ 1- Cloner le dépôt :
+ - git clone https://github.com/Muhameid/GeoBibli.git
 
-Géolocalisation automatique
+ - cd GeoBibli
 
-Affichage d’une carte interactive
+2- Construire le projet :
 
-Recherche de ville dans le monde
+Avec le wrapper : ./gradlew build
+Ou avec Gradle installé : gradle build
 
-Technologies utilisées
-Spring Boot (Java)
+3- Lancer l'application : ./gradlew bootRun
 
-Thymeleaf (moteur de templates)
+4- Accéder à l'application dans le navigateur : http://localhost:8090
 
-OkHttpClient pour les appels réseau
 
-Leaflet.js pour la carte interactive
-
-HTML / CSS / JavaScript
-
-Installation et exécution
-Prérequis
-Java JDK 17
-
-Gradle (ou utiliser le Gradle Wrapper inclus)
-
-Étapes
-Cloner le dépôt :
-
-bash
-Copier
-Modifier
-git clone https://github.com/Muhameid/GeoBibli.git
-cd GeoBibli
-Construire le projet :
-
-Avec le wrapper :
-
-bash
-Copier
-Modifier
-./gradlew build
-Ou avec Gradle installé :
-
-bash
-Copier
-Modifier
-gradle build
-Lancer l'application :
-
-bash
-Copier
-Modifier
-./gradlew bootRun
-Accéder à l'application dans le navigateur :
-
-http://localhost:8090
-
-Structure du projet
+* Structure du projet
 src/main/java : code Java
 
 src/main/resources/templates : vues Thymeleaf
@@ -79,5 +39,5 @@ src/main/resources/static : ressources statiques
 
 build.gradle : configuration du projet
 
-Remarques
+* Remarques :
 Ce projet a été réalisé dans un cadre scolaire pour démontrer l'intégration d'une gestion de bibliothèque avec des fonctionnalités de géolocalisation sur carte interactive.
